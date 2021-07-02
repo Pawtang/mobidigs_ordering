@@ -26,6 +26,12 @@
     line-height: 2em;  
 }
 
-.jumbotron {
+.splash {
     background-color: gray;
+    background-image: url('/images/splash.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: center;
+    margin: 0 auto 20px;
 }
