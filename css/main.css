@@ -1,31 +1,31 @@
-.box {
-    width: 90%;
-    margin: 20px auto;
-    background-color: lightgray;
-    border: solid 1px black;
-    border-radius: 10px;
-}
 
-.option-box {
-    width: 90%;
-    margin: 10px auto;
-    padding: 20px;
-    background-color: White;
-    border: solid 1px black;
-    border-radius: 10px;
+.price {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgreen;
     color: black;
+    border: none;
+    border-radius: 5px;
+    line-height: 2em;
 }
 
-html, body{
-    font-family: sans-serif;
+.description {
+    color: gray;
+    font-style: italic;
+}
+
+#total-cost {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgreen;
     color: black;
+    border: none;
+    border-radius: 5px;
+    line-height: 2em;  
 }
 
-h1 {
-    color: black;
-    padding: 0 20px;
-}
-
-p {
-    padding: 2px;
+.jumbotron {
+    background-color: gray;
 }
