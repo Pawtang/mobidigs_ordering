@@ -1,7 +1,7 @@
 
 .price {
     display: inline;
-    padding: 5px;
+    padding: 3px;
     margin: 5px;
     background-color: lightgreen;
     color: black;
@@ -27,8 +27,7 @@
 }
 
 .splash {
-    background-color: gray;
-    background-image: url('/images/splash.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(255,255,255,0.5)), url('/images/splash.jpg');
     height: 400px;
     background-attachment: fixed;
     background-size: cover;
@@ -36,3 +35,20 @@
     margin: 0 auto 20px;
     padding: 40px;
 }
+/* 
+.features {
+    margin: 50px auto auto auto auto;
+} */
+
+#header-container{
+    margin: 80px auto auto auto;
+}
+
+div {
+    /* border: 1px solid black; */
+}
+
+.col {
+    /* border: 1px dashed red; */
+}
+
