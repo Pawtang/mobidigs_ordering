@@ -1,13 +1,16 @@
 let total = 12000;
+const mileage = "document.getElementById('delivery-mileage').value"
 [...document.getElementsByClassName('form-check-input has-value')].forEach(function(item) {
   item.addEventListener('click', function(e) {
       if (e.target.id == "delivery"){
+        if mileage >= 0 {
         if (e.target.checked) {
-          total += parseInt(document.getElementById("delivery-mileage").value)
+          total += parseInt(mileage)
         } else {
-          total -= parseInt(document.getElementById("delivery-mileage").value)
+          total -= parseInt(mileage)
         }
       }
+    }
       else{
         if (e.target.checked) {
           total += parseInt(e.target.value, 10)
