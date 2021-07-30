@@ -28,7 +28,32 @@
   </div>
 
   <div class="container-md" style="max-width: 1000px; margin: 50px auto 50px auto;">
-    <div class="row">
+   
+    <form action="https://formspree.io/f/xdoywgeg" method="POST">
+      <div class="row floating">
+        <div class="col-sm">
+          <h2>Your Information</h2>
+          <div class="row">
+            <div class="col">
+              <label for="first-name">First Name</label>
+              <input type="text" class="form-control" id="first-name" name= "_fname" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="last-name">Last Name</label>
+              <input type="text" class="form-control" id="last-name" name= "_lname" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="InputEmail1">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+
+      </div>
+      </div>
+
+
+    <div class="row floating">
       <div class="col-sm">
         <h2>Standard Features</h2>
         <ul>
@@ -61,14 +86,14 @@
           <ul>
 
           <li>
-            <input class="form-check-input" type="checkbox" name="sides1">
-            <label class="form-check-label" for="storage1"><h6>Okoume marine plywood</h6></label><br>
+            <input class="form-check-input" type="checkbox" name="Marine Plywood">
+            <label class="form-check-label" for="MarinePlywood"><h6>Okoume marine plywood</h6></label><br>
             <p class="description">Not water-logged, just water logs</p>
           </li>
 
           <li>
-          <input class="form-check-input" type="checkbox" name="sides2">
-          <label class="form-check-label" for="storage1"><h6>Aluminum</h6></label><br>
+          <input class="form-check-input" type="checkbox" name="Aluminum">
+          <label class="form-check-label" for="Aluminum"><h6>Aluminum</h6></label><br>
           <p class="description">If ordering from Britain, request extra 'i'</p>
         </li>
         </ul>
@@ -79,18 +104,18 @@
         <div class="form-check">
           <ul>
             <li>
-          <input class="form-check-input" type="checkbox" name="storage1">
-          <label class="form-check-label" for="storage1"><h6>Drawers</h6></label><br>
+          <input class="form-check-input" type="checkbox" name="Drawers">
+          <label class="form-check-label" for="Drawers"><h6>Drawers</h6></label><br>
           <p class="description">Things that make drawings</p>
         </li>
         <li>
-          <input class="form-check-input" type="checkbox" name="storage2">
-          <label class="form-check-label" for="storage2"><h6>Cabinets</h6></label><br>
+          <input class="form-check-input" type="checkbox" name="Cabinets">
+          <label class="form-check-label" for="Cabiners"><h6>Cabinets</h6></label><br>
           <p class="description">A place to keep things</p>
         </li>
         <li>
-          <input class="form-check-input" type="checkbox" name="storage3">
-          <label class="form-check-label" for="storage3"><h6>Wire Racks</h6></label><br>
+          <input class="form-check-input" type="checkbox" name="WireRacks">
+          <label class="form-check-label" for="WireRacks"><h6>Wire Racks</h6></label><br>
           <p class="description">Also a place to keep things</p>
         </li>
         </ul>
@@ -99,29 +124,29 @@
     </div>
 
     
-    <div class="row">
+    <div class="row floating">
       <div class="col-sm">
         <h2>Upgrades</h2>
         <div class="form-check">
           <ul>
-          <input class="form-check-input has-value" type="checkbox" name="2door" value="250">
-          <label class="form-check-label" for="2door">2 doors <p class="price">$250</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="TwoDoors" value="250">
+          <label class="form-check-label" for="TwoDoors">2 doors <p class="price">$250</p></label>
           <p class="description">For getting in... and out</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="kit1" value="200">
-          <label class="form-check-label" for="kit1">Solar kit upgrade<p class="price">$200</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="SolarKit1" value="200">
+          <label class="form-check-label" for="SolarKit1">Solar kit upgrade<p class="price">$200</p></label>
           <p class="description">160W flex solar panel, 100Ah battery, 600W pure sine wave inverter</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="kit2" value="400">
-          <label class="form-check-label" for="kit2">Solar kit upgrade 2<p class="price">$400</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="SolarKit2" value="400">
+          <label class="form-check-label" for="SolarKit2">Solar kit upgrade 2<p class="price">$400</p></label>
           <p class="description">250W flex solar panel, 150Ah battery, 1000W pure sine wave inverter</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="battery" value="500">
-          <label class="form-check-label" for="battery">Lithium-ion battery <p class="price">$500</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="Battery" value="500">
+          <label class="form-check-label" for="Battery">Lithium-ion battery <p class="price">$500</p></label>
           <p class="description">More juice</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="suitcase" value="200">
-          <label class="form-check-label" for="suitcase">100W Solar suitcase <p class="price">$200</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="100WSuitcase" value="200">
+          <label class="form-check-label" for="100WSuitcase">100W Solar suitcase <p class="price">$200</p></label>
           <p class="description">Backup or extension of solar kit</p>
         </ul>
         </div>
@@ -130,24 +155,24 @@
       <div class="col-sm">
         <div class="form-check">
           <ul>
-          <input class="form-check-input has-value" type="checkbox" name="stands" value="0">
-          <label class="form-check-label" for="suitcase">Stands<p class="price">$---</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="Stands" value="0">
+          <label class="form-check-label" for="Stands">Stands<p class="price">$---</p></label>
           <p class="description">No one knows what this is</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="cargo" value="120">
-          <label class="form-check-label" for="suitcase">Cargo box<p class="price">$120</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="Cargo" value="120">
+          <label class="form-check-label" for="Cargo">Cargo box<p class="price">$120</p></label>
           <p class="description">Mounted on tongue</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="fridge" value="100">
-          <label class="form-check-label" for="suitcase">Refrigerator<p class="price">$100</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="Fridge" value="100">
+          <label class="form-check-label" for="Fridge">Refrigerator<p class="price">$100</p></label>
           <p class="description">Requires solar upgrade</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="two-burner" value="400">
-          <label class="form-check-label" for="suitcase">Two-burner cooktop<p class="price">$400</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="TwoBurner" value="400">
+          <label class="form-check-label" for="TwoBurner">Two-burner cooktop<p class="price">$400</p></label>
           <p class="description">With propane supply</p>
 
-          <input class="form-check-input has-value" type="checkbox" name="three-burner" value="600">
-          <label class="form-check-label" for="suitcase">Three-burner cooktop<p class="price">$600</p></label>
+          <input class="form-check-input has-value" type="checkbox" name="ThreeBurner" value="600">
+          <label class="form-check-label" for="ThreeBurner">Three-burner cooktop<p class="price">$600</p></label>
           <p class="description">With propane supply</p>
         </ul>
         </div>
@@ -155,22 +180,24 @@
 
     </div>
 
-    <div class="row">
+    <div class="row floating">
     <div class="col" style="max-width: 1000px;">
       <input class="form-check-input has-value" type="checkbox" name="delivery" id="delivery">
       <label class="form-check-label" for="delivery">Delivery to a distance of...<p class="price">$1/mile</p></label>
-      <input type="number" class="form-control" id="delivery-mileage" placeholder="Miles to deliver" style = "width: 200px;">
+      <input type="number" class="form-control" id="delivery-mileage" name = "DeliveryMileage" placeholder="Miles to deliver" style = "width: 200px;">
     </div>
   </div>
   
-    <div class="row">
+    <div class="row floating">
     <div class="col-sm" style="max-width: 1000px;">
     <h2 id="total">Total Cost: <span id="total-cost">$12,000.00</span> plus tax</h2>
+    <input type="number" name="totalCost" style = "display: none" id="ghost"></input>
   </div>
   <div class="d-grid gap-2 col-4 mx-auto">
-    <button class="btn btn-outline-success text-nowrap" type="button">Let's Go!</button>
+    <button class="btn btn-outline-success text-nowrap" type="submit">Let's Go!</button>
   </div>
   </div>
+</form>
 </div>
 
 

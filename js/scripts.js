@@ -1,47 +1,50 @@
 let total = 12000;
-const mileageElem = document.getElementById('delivery-mileage');
-let updateVal = 0;
+let delivery = 0;
+const inputBox = document.querySelector('#delivery-mileage');
+const check = document.querySelector("#delivery");
+const totalBox = document.getElementById('total-cost');
+const ghost = document.getElementById('ghost');
 
-document.getElementById('delivery-mileage').addEventListener('blur', function () {
-  const check = document.getElementById('delivery');
-    let mileage = mileageElem.value;
-        if (parseInt(mileage, 10) >= 0) {
-        if (check.checked) {
-          total += parseInt(mileage, 10)
-        } else {
-          total -= parseInt(mileage, 10)
-        }
+inputBox.addEventListener('blur', function(event) {
+  let mileage = event.target.value;
+  delivery = 0;
+  if (+mileage >= 0) {
+    if (check.checked) {
+      delivery = +mileage;
+    }
   }
-  document.getElementById('total-cost').innerHTML = `$${total.toLocaleString("en-US")}.00`;
+  updateDOM()
 });
+
+check.addEventListener('click', function(e) {
+  delivery = 0;
+  if (e.target.checked) {
+    delivery = +inputBox.value;
+  }
+  updateDOM()
+});
+
 
 [...document.getElementsByClassName('form-check-input has-value')].forEach(function(item) {
-  item.addEventListener('click', function(e) {
-       if (e.target.id == "delivery"){
-    //     let mileage = mileageElem.value;
-    //     if (parseInt(mileage, 10) >= 0) {
-    //     if (e.target.checked) {
-    //       updateVal = mileageElem.value;
-    //       total += parseInt(updateVal, 10)
-    //     } else {
-    //       total -= parseInt(updateVal, 10)
-    //     }
-    //   }
-     }
-       else{
-        if (e.target.checked) {
-          total += parseInt(e.target.value, 10)
-        } else {
-          total -= parseInt(e.target.value, 10)
-        }
-     }
-    document.getElementById('total-cost').innerHTML = `$${total.toLocaleString("en-US")}.00`
+    item.addEventListener('click', function(e) {
+         if (e.target.id != "delivery"){
+            if (e.target.checked) {
+                total += parseInt(e.target.value, 10)
+              } else {
+                total -= parseInt(e.target.value, 10)
+              }
+       }
+      updateDOM()
+    })
+  });
+  
+  
+function updateDOM() {
+    totalBox.innerHTML = `$${(total+delivery).toLocaleString("en-US")}.00`
+    ghost.value = total+delivery;
+}
+
+  document.addEventListener('click', e=> {
+    console.log(e.target);
   })
 
-});
-
-
-document.addEventListener('click', e=> {
-  console.log(e.target);
-
-})
