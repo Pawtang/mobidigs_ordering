@@ -31,11 +31,11 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.
     color: black;
     border: none;
     border-radius: 5px;
-    line-height: 2em;  
+    line-height: 2em;
 }
 
 .splash {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(255,255,255,0.5)), url('/images/fplash.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(255,255,255,0.5)), url("../images/fplash.jpg");
     height: 400px;
     background-attachment: fixed;
     background-size: cover;
@@ -51,7 +51,7 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.
     backdrop-filter: blur(5px);
     margin: 0;
 }
-/* 
+/*
 .features {
     margin: 50px auto auto auto auto;
 } */
@@ -64,9 +64,9 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.
 .floating {
     transition: 0.3s;
     margin: 50px 20px;
-    padding: 20px;  
+    padding: 20px;
     border-radius: 10px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1); 
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
     background-color: rgba(255,255,255,0.8)
 }
@@ -76,7 +76,7 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.
     /* margin: 50px -20px;
     padding: 25px; */
     backdrop-filter: blur(2px);
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
 }
 
